@@ -5,7 +5,7 @@ function getYoutubeData(searchTerm, callback) {
   const query = {
     type: "video",
     q: searchTerm,
-    maxResults: 27,
+    maxResults: 9,
     part: "snippet",
     key: API_KEY,
   };
@@ -24,7 +24,7 @@ function watchSubmit() {
 
 function renderResult(result) {
     //(JSON.stringify(result))
-  return (`<div><a href="https://www.youtube.com/watch?v=${result.id.videoId}"" target="_blank" class= "thumbnail"><img src="${result.snippet.thumbnails.medium.url}"></a></div>`);
+  return (`<div class="result"><a href="https://www.youtube.com/watch?v=${result.id.videoId}"" target="_blank" class= "thumbnail"><img src="${result.snippet.thumbnails.medium.url}"></a><p class="caption">${result.snippet.title}</p></div>`);
 }
 function renderAllResults(data) {
   $(".js-result").html(data.items.map(renderResult));  

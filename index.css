@@ -2,19 +2,36 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0 auto;
-  max-width: 976px;
+  max-width: 1050px;
 }
 
 .results {
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  background-color: white;
 }
 
+.result {
+  margin: 5px;
+  box-shadow: 0px 3px 5px -1px rgba(135, 135, 135, 0.8);
+}
+
+.caption {
+  text-align: center;
+  max-width: 324px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  padding: 0 10px;
+  font-weight: bold;
+
+}
 .thumbnail {
   padding: 2px;
   min-width: 320px;
