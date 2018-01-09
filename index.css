@@ -4,8 +4,12 @@
 
 
 body {
-  margin: 0 auto;
+  margin: 30px auto;
   max-width: 1050px;
+}
+
+fieldset {
+  border: none;
 }
 
 .results {
@@ -24,7 +28,7 @@ body {
 
 .caption {
   text-align: center;
-  max-width: 324px;
+  max-width: 320px;
   overflow:hidden;
   text-overflow:ellipsis;
   white-space:nowrap;
@@ -33,7 +37,6 @@ body {
 
 }
 .thumbnail {
-  padding: 2px;
   min-width: 320px;
   max-height: 180px;
 }
