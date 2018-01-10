@@ -4,36 +4,42 @@
 
 html {
   padding:10px;
+  background-color: #978d81;
 }
 
 main {
  display: block;
  font-family: 'Quicksand', sans-serif;
  margin: 0 auto;
- margin-top: 30px;
+ margin-top: 10px;
+ margin-bottom: 10px;
  max-width: 1038px;
- box-shadow: inset 0px 3px 5px -1px rgba(135, 135, 135, 0.8);
+ box-shadow: 0px 3px 5px -1px #525252cc;
  background-color: #efefef;
  border-radius: 10px;
- padding-top: 10px;
 }
 
 legend {
-  font-size: 42px;
+  text-align: center;
+  font-size: 46px;
   font-family: 'Slackey', cursive;
   margin-bottom: 10px;
-  color:  rgb(94, 94, 94);
-  text-shadow: 0px 2px 1px  rgba(135, 135, 135, 0.8);
+  color:  #e20f0f;
+  text-shadow: 0px 2px 1px #525252cc;
 }
 
 input#search {
+  text-align: center;
   border: 0;
   padding-left: 10px;
-  width:400px;
+  min-width: 200px;
+  width: 80%;
   height: 36px;
   font-family: 'Quicksand', sans-serif;
+  box-shadow: inset 0px 3px 5px -1px #525252cc;
   font-size: 24px;
   vertical-align: bottom;
+  margin-bottom: 10px;
 }
 
 input#search::-webkit-input-placeholder {
@@ -49,9 +55,11 @@ button#submit {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   color: #fff;
+  box-shadow: 0px 2px 2px 0px #525252cc;
   text-transform: uppercase;
   background: #3c85d8;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+  text-shadow: 0 -1px 0 #525252cc;
+  margin-bottom: 10px;
 }
 
 
@@ -67,7 +75,7 @@ fieldset {
   align-items: center;
   justify-content: space-evenly;
   max-width: 1038px;
-  box-shadow: inset 0px 3px 5px -1px rgba(135, 135, 135, 0.8);
+  box-shadow: 0px 3px 5px -1px #525252cc;
   background-color: #efefef;
   border-radius: 10px;
   padding-top: 10px;
@@ -78,7 +86,7 @@ fieldset {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   
-  box-shadow: 0px 3px 5px -1px rgba(135, 135, 135, 0.8);
+  box-shadow: 0px 3px 5px -1px #525252cc;
   background-color: white;
 }
 
