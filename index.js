@@ -57,7 +57,7 @@ function renderPageNav (data) {
 }
 
 function renderResult (result) {
-  return (`<div class='result'><a href='https://www.youtube.com/watch?v=${result.id.videoId}' target='_blank' class= 'thumbnail'><img src='${result.snippet.thumbnails.medium.url}'></a><p class='caption'>${result.snippet.title}</p></div>`)
+  return (`<div class='result'><a href='https://www.youtube.com/watch?v=${result.id.videoId}' target='_blank' class= 'thumbnail' role='link'><img src='${result.snippet.thumbnails.medium.url}' alt='click to load video'></a><p class='caption'>${result.snippet.title}</p></div>`)
 }
 
 function renderAllResults (data) {
