@@ -25,6 +25,7 @@ function watchSubmit () {
     let query = queryTarget.val()
     queryTarget.val('')
     getYoutubeData(query, undefined, renderAllResults)
+    $('#main').animate({marginTop: '10px'}, 400)
     $('.results').css('visibility', 'visible')
   })
 }
