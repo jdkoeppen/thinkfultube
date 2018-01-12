@@ -11,19 +11,19 @@
 </head>
 
 <body>
-  <main id="main">
-    <form>
+  <main role="main" id="main">
+    <form role="form">
       <fieldset>
-        <div align="center">
+        <div align="center" role="search">
           <legend>Justin's Custom YouTube Search</legend>
-          <input type="text" id="search" alt="search" placeholder="Search for Anything...">
-          <button type="submit" id="submit" value="submit"><i class="fa fa-search fa-lg" aria-hidden="true"></i>
+          <input role="searchbox" type="text" id="search" alt="search" placeholder="Search for Anything...">
+          <button role="submit" aria-label="submit" type="submit" id="submit" value="submit"><i class="fa fa-search fa-lg" title="Submit" ></i><span class="sr-only">Submit</span>
 </button>
         </div>
       </fieldset>
     </form>
   </main>
-  <div class="js-result results">
+  <div role="section" class="js-result results" aria-live="assertive">
 
   </div>
 
